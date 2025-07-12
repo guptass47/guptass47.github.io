@@ -1,60 +1,95 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #fff;
-  color: #000;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #111;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
+.topbar {
+  background: #00356B; /* Yale Blue */
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.2em;
-  color: #00356B; /* Yale Blue */
-}
-
-.subtitle {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-nav {
-  margin-bottom: 30px;
-}
-
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
+.topbar .name {
   font-weight: bold;
-  color: #00356B;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
 }
 
-nav a:hover {
+.topbar .nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.topbar .nav a:hover {
   text-decoration: underline;
 }
 
-section {
-  margin-bottom: 40px;
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
 }
 
-h2 {
-  font-size: 1.5rem;
-  border-bottom: 2px solid #00356B;
-  padding-bottom: 6px;
-  margin-bottom: 16px;
-  color: #00356B;
+.bio-left {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
 }
+
+.profile-pic {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 6px;
+  margin-bottom: 1em;
+}
+
+.bio-left h2 {
+  margin: 0.5em 0 0.2em;
+}
+
+.bio-left p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.buttons {
+  margin-top: 1em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4em 1em;
+  background: #00356B;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0.3em;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background: #002244;
+}
+
+.bio-right {
+  flex: 2 1 600px;
+  padding-left: 2em;
+}
+
+.bio-right p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
 
 
