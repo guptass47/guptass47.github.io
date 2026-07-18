@@ -102,22 +102,31 @@ body {
   font-size: 1rem;
 }
 
-.field-photo {
-  margin: 1.5em 0 0;
+.research-banner {
+  margin: 0 0 1.5em;
 }
 
-.field-photo img {
+.research-banner img {
   width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center 65%;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   display: block;
 }
 
-.field-photo figcaption {
+.research-banner figcaption {
   margin-top: 0.5em;
   font-size: 0.85rem;
   color: #666;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .research-banner img {
+    height: 180px;
+  }
 }
 
 
